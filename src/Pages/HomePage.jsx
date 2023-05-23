@@ -78,14 +78,14 @@ const HomePage = () => {
                 </button>
 
                 <button
-                  className="mr-4 mt-10 mt-6 bg-transparent  text-white font-semibold  py-2 px-4 border border-white  rounded "
+                  className="mr-4 mt-10 mt-6 bg-transparent hover:bg-gray-700 hover:text-white text-white font-semibold  py-2 px-4 border border-white  rounded "
                   onClick={unNextPoke}
                 >
                   ก่อนหน้า
                 </button>
 
                 <button
-                  className="mr-4 mt-10 mt-6 bg-transparent  text-white font-semibold  py-2 px-4 border border-white  rounded"
+                  className="hover:bg-gray-700 hover:text-white mr-4 mt-10 mt-6 bg-transparent  text-white font-semibold  py-2 px-4 border border-white  rounded"
                   onClick={nextProke}
                 >
                   ต่อไป ...{" "}
