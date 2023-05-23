@@ -54,7 +54,7 @@ const HomePage = () => {
     return () => abortController.abort();
   }, [number]);
   return (
-    <div className=" grid justify-items-center m-6  p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className=" overflow-hidden  grid justify-items-center m-6  p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div>
         {loading ? (
@@ -70,19 +70,30 @@ const HomePage = () => {
         ) : (
           <>
             <h1 className="text-white text-2xl">{poke?.name}</h1>
+
+            <div class="grid grid-cols-3 gap-3">
+
             <button className=" mt-6 bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded" onClick={addFav}>
               Add to Favourite
             </button>
-            <br />
 
             <button className="mr-4 mt-10 mt-6 bg-transparent  text-white font-semibold  py-2 px-4 border border-white  rounded " onClick={unNextPoke}>
               ก่อนหน้า
             </button>
-            <button className="bg-transparent  text-white font-semibold  py-2 px-4 border border-white  rounded" onClick={nextProke}>ต่อไป ... </button>
+
+            <button className="mr-4 mt-10 mt-6 bg-transparent  text-white font-semibold  py-2 px-4 border border-white  rounded" onClick={nextProke}>ต่อไป ... </button>
+
+
+            </div>
+
+           
+            <br />
+
+           
             
 
             <img
-              className=""
+              className="w-80"
               src={poke?.sprites?.other?.home?.front_default}
               alt=""
             />

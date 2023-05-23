@@ -11,7 +11,7 @@ const FavPoke = ({fav}) => {
         {fav?.map((data, index)=>{
            return (
             <div key={index}>
-            <h3>{data?.name}</h3>
+            <h3 className='text-white'>{data?.name}</h3>
             <img src={data?.sprites?.other?.home?.front_default} alt="" />
             <LikePoke/>
         </div>
