@@ -28,6 +28,8 @@ const HomePage = () => {
     setFav((data) => [...data, poke]);
   };
 
+  
+
   console.log(fav);
 
   useEffect(() => {
@@ -71,7 +73,7 @@ const HomePage = () => {
           <>
             <h1 className="text-white text-2xl">{poke?.name}</h1>
 
-            <div class="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-3 gap-3">
 
             <button className=" mt-6 bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded" onClick={addFav}>
               Add to Favourite
@@ -112,7 +114,7 @@ const HomePage = () => {
         <h1 className="text-white text-2xl">Your Pokemon</h1>
         <br />
         {fav.length > 0 ? (
-          <FavPoke fav={fav} />
+          <FavPoke fav={fav}   setFav={setFav} />
         ) : (
           <div className="flex h-full justify-center items-center">
             <p className="text-white ">ไม่มีข้อมูล กรุณาเลือก Favourite ก่อน !</p>
