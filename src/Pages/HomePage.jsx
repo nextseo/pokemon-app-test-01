@@ -70,9 +70,15 @@ const HomePage = () => {
         ) : (
           <>
             <h1 className="text-white text-2xl">{poke?.name}</h1>
-            <button className="border-solid border-2 border-sky-500 mt-10 text-white text-xl" onClick={addFav}>
+            <button className=" mt-6 bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded" onClick={addFav}>
               Add to Favourite
             </button>
+            <br />
+
+            <button className="mr-4 mt-10 mt-6 bg-transparent  text-white font-semibold  py-2 px-4 border border-white  rounded " onClick={unNextPoke}>
+              ก่อนหน้า
+            </button>
+            <button className="bg-transparent  text-white font-semibold  py-2 px-4 border border-white  rounded" onClick={nextProke}>ต่อไป ... </button>
             
 
             <img
@@ -82,26 +88,23 @@ const HomePage = () => {
             />
             <ul>
               {poke?.abilities?.map((data, index) => (
-                <li key={index}>{data.ability.name}</li>
+                <li className="text-white text-xl" key={index}>{data.ability.name}</li>
               ))}
             </ul>
 
-            <button className="mr-4 mt-10" onClick={unNextPoke}>
-              ก่อนหน้า
-            </button>
-            <button onClick={nextProke}>ต่อไป ... </button>
+           
           </>
         )}
       </div>
 
       <div>
-        <h1>Your Pokemon</h1>
+        <h1 className="text-white text-2xl">Your Pokemon</h1>
         <br />
         {fav.length > 0 ? (
           <FavPoke fav={fav} />
         ) : (
           <div className="flex h-full justify-center items-center">
-            <p>ไม่มีข้อมูล กรุณาเลือก Favourite ก่อน !</p>
+            <p className="text-white ">ไม่มีข้อมูล กรุณาเลือก Favourite ก่อน !</p>
           </div>
         )}
       </div>
