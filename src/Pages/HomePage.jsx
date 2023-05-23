@@ -69,11 +69,11 @@ const HomePage = () => {
           </div>
         ) : (
           <>
-            <h1>{poke?.name}</h1>
-            <button className="mt-10" onClick={addFav}>
+            <h1 className="text-white text-2xl">{poke?.name}</h1>
+            <button className="border-solid border-2 border-sky-500 mt-10 text-white text-xl" onClick={addFav}>
               Add to Favourite
             </button>
-            <br></br>
+            
 
             <img
               className=""
