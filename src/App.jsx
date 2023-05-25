@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Components
 import Navbar from "./components/Navbar";
-import Workshop_1 from "./Pages/Workshop_1";
-import Workshop_2 from './Pages/Workshop_2.jsx'
+import Workshop_1 from "./Pages/workshop1/Workshop_1";
+import Workshop_2 from './Pages/workshop2/Workshop_2.jsx'
 import HomePage from './Pages/HomePage'
 
 function App() {

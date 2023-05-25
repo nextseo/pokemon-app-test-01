@@ -5,9 +5,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Dashboard", to: "/", current: true },
-  { name: "workshop_1", to: "/workshop_1", current: false },
-  { name: "workshop_2", to: "/workshop_2", current: false },
+  { name: "หน้าแรก", to: "/", current: true },
+  { name: "WS1", to: "/workshop_1", current: false },
+  { name: "WS2", to: "/workshop_2", current: false },
 ];
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
